@@ -10,6 +10,7 @@ MAINTAINER Samuel Nasello <samuel.nasello@elosi.com>
 
 RUN apt-get update \
 	&& apt-get install -y curl \
+	&& apt-get install -y wget \
 	&& curl -s -k -L -C - -o /opt/jdk-6u45-linux-x64.bin -b "oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin \
 	&& chmod +x /opt/jdk-6u45-linux-x64.bin \
 	&& cd /opt \
